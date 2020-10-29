@@ -1,0 +1,69 @@
+/*Cards*/
+.card {
+  transition: transform 100ms ease-out;
+}
+.cards {
+  height: 100%;
+  padding-top: 4vh;
+}
+.cards li {
+  cursor: pointer;
+}
+
+/*Pokemon Cards*/
+#pokemon img {
+  width: 40vw;
+  max-width: 220.5px;
+  max-height: 307.8px;
+  filter: drop-shadow(0 3px 2px rgba(0, 0, 0, 0.5));
+}
+#pokemon ul {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+#pokemon li {
+  list-style: none;
+  margin: 0 1.5vh 1.5vh 0;
+}
+
+/*Trainer Cards*/
+#trainer img {
+  width: 40vw;
+  max-width: 220.5px;
+  max-height: 307.8px;
+  filter: drop-shadow(0 3px 2px rgba(0, 0, 0, 0.5));
+}
+#trainer ul {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+#trainer li {
+  list-style: none;
+  margin: 0 1.5vh 1.5vh 0;
+}
+
+/*Energy Cards*/
+#energy img {
+  width: 40vw;
+  max-width: 220.5px;
+  max-height: 307.8px;
+  filter: drop-shadow(0 3px 2px rgba(0, 0, 0, 0.5));
+}
+
+#energy ul {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+#energy li {
+  list-style: none;
+  margin: 0 1.5vh 1.5vh 0;
+}

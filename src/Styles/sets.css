@@ -1,0 +1,73 @@
+#sets {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+#sets ul {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+#sets li {
+  width: 35vw;
+  height: 35vw;
+  max-width: 175px;
+  max-height: 175px;
+  background: white;
+  list-style: none;
+  padding: 5px;
+  border: solid 1px grey;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 10px;
+  margin: 10px;
+  border-radius: 15px;
+  filter: drop-shadow(0 5px 2px rgba(0, 0, 0, 0.5));
+  cursor: pointer;
+  transition: all 100ms ease-out;
+}
+
+#sets li:active {
+  transform: scale(0.98);
+}
+
+.setLogos {
+  height: auto;
+  max-height: 50px;
+  width: auto;
+  max-width: 80px;
+  list-style: none;
+  margin: 0;
+}
+#setSymbol {
+  width: auto;
+  height: auto;
+  max-height: 30px;
+  max-width: 30px;
+  margin: 0;
+}
+#setName {
+  margin: 0;
+
+  width: 100%;
+  text-align: center;
+  font-size: 10px;
+}
+#setSeries {
+  width: 100%;
+  font-size: 10px;
+  text-align: center;
+}
+#setReleaseDate {
+  bottom: 1px;
+}
+@media (hover: hover) {
+  #sets li:hover {
+    transform: scale(1.02);
+  }
+}

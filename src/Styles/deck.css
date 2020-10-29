@@ -1,0 +1,139 @@
+#deck {
+  display: flex;
+  flex-direction: column;
+  background: rgb(96, 221, 213);
+  width: 25vw;
+  max-width: 500px;
+  z-index: 5;
+  text-align: center;
+  height: 100%;
+}
+
+#deck hr {
+  border: none;
+  background-color: white;
+  height: 5px;
+  width: 100%;
+}
+#deck.active {
+  position: absolute;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  background: rgb(96, 221, 213);
+}
+.currentDeck {
+  height: 70%;
+  overflow-y: scroll;
+  padding-top: 10px;
+}
+.deckTitle {
+  width: 100%;
+  color: white;
+  background: rgb(96, 221, 213);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 6;
+  font-family: monospace;
+  filter: drop-shadow(0 2px 3px rgba(0, 0, 0, 0.3));
+}
+.currentDeck ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 2vh;
+}
+.currentDeck li {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  filter: drop-shadow(0 3px 7px rgba(0, 0, 0, 0.5));
+  width: 80%;
+  background: white;
+  font-size: max(0.6vw, 14px);
+  padding-left: 12px;
+  margin-bottom: 5px;
+}
+
+.deckCardControls {
+  display: flex;
+  flex-direction: row;
+}
+#cardCounter {
+  font-size: max(1vw, 15px);
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+
+  background: rgba(255, 255, 255, 0.7);
+}
+#cardCounter img {
+  width: max(1vw, 18px);
+  transition: transform 50ms ease-out;
+}
+#cardCounter img:active {
+  transform: scale(0.98);
+}
+#cardCounter p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 100%;
+}
+#counterBtns {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+#counterBtns button {
+  font-size: max(0.7vw, 18px);
+  border: none;
+  outline: none;
+  padding: 3px;
+  cursor: pointer;
+}
+#deckCounter {
+  font-size: 18px;
+}
+.cardIconContainer {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-right: max(1.5vw, 12px);
+}
+.cardIcon {
+  height: max(1.5vw, 25px);
+  cursor: pointer;
+  transition: transform 50ms ease-out;
+  margin-right: max(1vw, 12px);
+}
+.cardIcon:active {
+  transform: scale(0.98);
+}
+.trash {
+  height: max(1.5vw, 25px);
+  cursor: pointer;
+  filter: drop-shadow(0 0 0 white);
+}
+@media (max-aspect-ratio: 10/9) {
+  .currentDeck {
+    width: 100%;
+  }
+  #deck {
+    position: fixed;
+    right: -100vw;
+    height: 100vh;
+    top: 0;
+    transition: all 200ms ease-out;
+  }
+}

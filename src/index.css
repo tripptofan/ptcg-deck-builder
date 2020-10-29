@@ -1,13 +1,89 @@
-body {
+h1,
+p,
+div,
+input,
+a,
+img,
+span,
+html,
+body,
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+html,
+body {
+  height: 100%;
+}
+body {
+  background-color: darkcyan;
+  display: flex;
+  justify-content: center;
+}
+
+html {
+  font-family: arial;
+}
+
+/*Scrollbar*/
+::-webkit-scrollbar {
+  width: 10px;
+  background: rgba(0, 0, 0, 0.3);
+}
+::-webkit-scrollbar-button {
+  background: rgba(0, 0, 0, 0.3);
+}
+::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.3);
+}
+::-webkit-scrollbar-track-piece {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: white;
+}
+::-webkit-scrollbar-corner {
+  background-color: transparent;
+}
+::-webkit-resizer {
+  background: white;
+}
+
+@media (hover: hover) {
+  #sets li:hover {
+    transform: scale(1.02);
+  }
+  .card:hover {
+    transform: scale(1.02);
+  }
+}
+
+@media (max-aspect-ratio: 10/9) {
+  html,
+  body {
+    overflow: hidden;
+  }
+  .largerImgDisplay {
+    height: 100%;
+  }
+  #sets ul {
+    justify-content: center;
+  }
+  ::-webkit-scrollbar {
+    background: transparent;
+  }
+  ::-webkit-scrollbar-button {
+    background: transparent;
+  }
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  ::-webkit-scrollbar-track-piece {
+    background-color: transparent;
+  }
 }
